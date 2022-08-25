@@ -1,0 +1,21 @@
+input{
+  padding :15px;
+  font-size:15px;
+}
+.input-data{
+  padding :25px;
+  font-size:24px;
+}
+.login-form{
+text-align: center;
+}
+button{
+  padding :15px 20px;
+  font-size:15px;
+  background-color: blue;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: red;
+  padding: 17px 22px;
+}
