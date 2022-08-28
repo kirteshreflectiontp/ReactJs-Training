@@ -12,16 +12,47 @@ const UpdateTxt = () => {
         setShow(!show)
     }
     const data = [{
+        productImg:'image1',
         title:'product 1',
         desc:'Product test',
+        price:'Rs.5000'
     },
     {
+        productImg:'image1',
         title:'product 1',
         desc:'Product test',
+        price:'Rs.5000'
     },
     {
+        productImg:'image1',
         title:'product 1',
         desc:'Product test',
+        price:'Rs.5000'
+
+    },
+    {
+        productImg:'image1',
+        title:'product 1',
+        desc:'Product test',
+        price:'Rs.5000'
+    },
+    {
+        productImg:'image1',
+        title:'product 1',
+        desc:'Product test',
+        price:'Rs.5000'
+    },
+    {
+        productImg:'image1',
+        title:'product 1',
+        desc:'Product test',
+        price:'Rs.5000'
+    },
+    {
+        productImg:'image1',
+        title:'product 1',
+        desc:'Product test',
+        price:'Rs.5000'
     },
 ]
     return(
@@ -33,7 +64,7 @@ const UpdateTxt = () => {
             {show && <div>You have just clicked the PUSH Button</div>}
         </div>
         {data.map((value)=>(
-            <Data title={value.title} desc={value.desc}/>
+            <Data productImg={value.productImg} title={value.title} desc={value.desc}  price={value.price}/>
         ))}
         </>
     );
