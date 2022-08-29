@@ -1,4 +1,4 @@
-import './main.css'
+import './main.scss'
 import Inputprops from './inputprops';
 const Header = () => {
     return(
@@ -9,6 +9,7 @@ const Header = () => {
 </div>
 <br/>
 <br/>
+<br/>
 <div>
 <div className='input-data'>
                 <Inputprops type="text" placeholder="Email Address"/>
@@ -16,6 +17,10 @@ const Header = () => {
             <div className='input-data'>
                 <Inputprops  type="password" placeholder="Password"/>
             </div>
+            <div className='forgot'><span>Forgot Password?</span> </div>
+            <br/>
+            <br/>
+            <br/>
             <div className='input-data'>
                 <button className='login_button'>LOG IN</button>
             </div>
