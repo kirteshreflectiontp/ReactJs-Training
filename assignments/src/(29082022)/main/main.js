@@ -1,6 +1,9 @@
 import './main.scss'
 import Inputprops from './inputprops';
 const Header = () => {
+    const pagechange = (a) => {
+        alert(a);
+      }
     return(
 <>
 <div className="main">
@@ -17,12 +20,12 @@ const Header = () => {
             <div className='input-data'>
                 <Inputprops  type="password" placeholder="Password"/>
             </div>
-            <div className='forgot'><span>Forgot Password?</span> </div>
+            <div className='forgot'><span onClick={() => pagechange("This Page could not redirect")}>Forgot Password?</span> </div>
             <br/>
             <br/>
             <br/>
             <div className='input-data'>
-                <button className='login_button'>LOG IN</button>
+                <button  onClick={() => pagechange("This Page could not redirect")} className='login_button'>LOG IN</button>
             </div>
 </div>
 
