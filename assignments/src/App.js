@@ -1,5 +1,5 @@
 import FormBody from './(29082022)/formbody'
-import './App.scss';
+import './App.css';
 
 function App() {
   return (
