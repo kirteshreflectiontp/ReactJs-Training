@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
-import Data from './data'
+import Data from './data';
+
 
 
 const UpdateTxt = () => {
+   
     const [ name, setName] = useState('');
     const [ show, setShow ] = useState(false);
     const updateContent = (event) => {
@@ -12,45 +14,45 @@ const UpdateTxt = () => {
         setShow(!show)
     }
     const data = [{
-        productImg:'image1',
-        title:'product 1',
+        productImg:'productImg',
+        title:'Product 1',
         desc:'Product test',
         price:'Rs.5000'
     },
     {
-        productImg:'image1',
-        title:'product 1',
+        productImg:'image',
+        title:'Product 2',
         desc:'Product test',
         price:'Rs.5000'
     },
     {
-        productImg:'image1',
-        title:'product 1',
+        productImg:'image',
+        title:'Product 3',
         desc:'Product test',
         price:'Rs.5000'
 
     },
     {
-        productImg:'image1',
-        title:'product 1',
+        productImg:'image',
+        title:'Product 4',
         desc:'Product test',
         price:'Rs.5000'
     },
     {
-        productImg:'image1',
-        title:'product 1',
+        productImg:'image',
+        title:'Product 5',
         desc:'Product test',
         price:'Rs.5000'
     },
     {
-        productImg:'image1',
-        title:'product 1',
+        productImg:'image',
+        title:'Product 6',
         desc:'Product test',
         price:'Rs.5000'
     },
     {
-        productImg:'image1',
-        title:'product 1',
+        productImg:'image',
+        title:'Product 7',
         desc:'Product test',
         price:'Rs.5000'
     },

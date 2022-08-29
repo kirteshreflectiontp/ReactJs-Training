@@ -1,5 +1,5 @@
 import React from 'react';
-
+import productImg from './productImg.jpg';
 const Data = (props)=>{
     return(
         <div>
