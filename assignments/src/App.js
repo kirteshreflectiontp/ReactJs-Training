@@ -1,12 +1,11 @@
 
-import Form from './(29082022)/Form'
+import Form from './(30082022)/loginform'
 
 import './App.css';
 
 function App() {
   return (
     <>
-   
     <Form/>
     </>
   );

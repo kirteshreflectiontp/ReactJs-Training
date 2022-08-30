@@ -2,9 +2,9 @@ import './main.scss'
 import Inputprops from './inputprops';
 import {useState} from 'react';
 const Header = () => {
-    const[page,setPage] = useState('Login');
+    const[page,setPage] = useState('LOGIN');
     const pagechange = () => {
-      page === 'Login'? setPage('Register'):setPage('Login')
+      page === 'LOGIN'? setPage('REGISTER'):setPage('LOGIN')
     }
     return(
 <>
@@ -27,7 +27,7 @@ const Header = () => {
             <br/>
             <br/>
             <div className='input-data'>
-                <button  onClick={pagechange} className='login_button'>LOG IN</button>
+                <button className='login_button' onClick={(event)=> pagechange(event)}>{page === 'LOGIN'?'SIGN UP':'LOGIN'} </button>
             </div>
 </div>
 
