@@ -1,0 +1,45 @@
+
+.login_head{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    padding :15px;
+    font-size:15px;
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+  }
+  .input-data{
+    padding: 5px 0px;
+  }
+  .login-form{
+  text-align: center;
+  }
+  .forgot{
+    width: 100%;
+    text-align: right;
+    color:  #fb3570;
+  }
+  .login_button{
+        font-size:15px;
+        background-image: linear-gradient(to right, #dc2430, #7b4397 40%  );
+        margin: 10px 0px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid transparent;
+      }
+
+      
+      
+     
+  
+  

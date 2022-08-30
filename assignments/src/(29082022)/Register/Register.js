@@ -1,10 +1,10 @@
 import Header from './header/header'
 import Main from './main/main'
 
-import './formbody.scss';
+import './Register.scss';
 import Footer from './footer/footer';
 
-function FormBody() {
+function Register() {
   return (
     <>
     <div className='body_b'>
@@ -16,4 +16,4 @@ function FormBody() {
   );
 }
 
-export default FormBody;
+export default Register;

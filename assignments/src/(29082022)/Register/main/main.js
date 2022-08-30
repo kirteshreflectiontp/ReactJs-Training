@@ -1,9 +1,11 @@
 import './main.scss'
 import Inputprops from './inputprops';
+import {useState} from 'react';
 const Header = () => {
-    const pagechange = (a) => {
-        alert(a);
-      }
+    const[page,setPage] = useState('Login');
+    const pagechange = () => {
+      page === 'Login'? setPage('Register'):setPage('Login')
+    }
     return(
 <>
 <div className="main">
@@ -20,12 +22,12 @@ const Header = () => {
             <div className='input-data'>
                 <Inputprops  type="password" placeholder="Password"/>
             </div>
-            <div className='forgot'><span onClick={() => pagechange("This Page could not redirect")}>Forgot Password?</span> </div>
+            <div className='forgot'><span>Forgot Password?</span> </div>
             <br/>
             <br/>
             <br/>
             <div className='input-data'>
-                <button  onClick={() => pagechange("This Page could not redirect")} className='login_button'>LOG IN</button>
+                <button  onClick={pagechange} className='login_button'>SIGN UP</button>
             </div>
 </div>
 
