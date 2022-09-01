@@ -49,7 +49,10 @@ const Form = () => {
                 <Inputprops  type="password" placeholder="Password"/>
             </div>
             <div className='input-data'>
-                <Inputprops  type="number" placeholder="Mobile Number"/>
+                <Inputprops  type="number" placeholder="Enter  Mobile Number"/>
+            </div>
+            <div className='input-data'>
+                <Inputprops  type="textr" placeholder="Enter your address"/>
             </div>
             <div className='forgot'><span>Forgot Password?</span> </div>
             <br/>
