@@ -1,12 +1,11 @@
 
-import Form from './(30082022)/loginform'
-
+import Flipcart from './(28082022)/flipcart'
 import './App.css';
 
 function App() {
   return (
     <>
-    <Form/>
+    <Flipcart/>
     </>
   );
 }

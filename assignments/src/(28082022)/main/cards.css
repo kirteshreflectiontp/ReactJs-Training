@@ -1,0 +1,15 @@
+.product{
+    height: 200px;
+    width: 200px;
+}
+.product_block{
+text-align: center;
+border: 1px solid black;
+padding: 0px 50px;
+}
+.pricetag{
+    color: darkgreen;
+}
+.brand{
+    color: grey;
+}
