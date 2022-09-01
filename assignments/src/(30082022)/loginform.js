@@ -16,6 +16,10 @@ const Form = () => {
    
 
 </div>
+
+
+{page === 'LOGIN'?
+<div>
 <div className="main">
     <div className ='login_head'>Login</div>
     <div>Welcome back!Please enter your details.</div>
@@ -23,7 +27,8 @@ const Form = () => {
 <br/>
 <br/>
 <br/>
-{page === 'LOGIN'?
+
+
 <div>
 
             <div className='input-data'>
@@ -40,7 +45,16 @@ const Form = () => {
                 <button className='login_button'>LOGIN</button>
             </div>
 </div>
+</div>
  :
+ <div>
+<div className="main">
+    <div className ='login_head'>Sign Up</div>
+    <div>Welcome !Please enter your details.</div>
+</div>
+<br/>
+<br/>
+<br/>
  <div>
             <div className='input-data'>
                 <Inputprops type="text" placeholder="Email Address"/>
@@ -54,13 +68,13 @@ const Form = () => {
             <div className='input-data'>
                 <Inputprops  type="textr" placeholder="Enter your address"/>
             </div>
-            <div className='forgot'><span>Forgot Password?</span> </div>
             <br/>
             <br/>
             <br/>
             <div className='input-data'>
                 <button className='login_button'>SIGN UP</button>
             </div>        
+</div>
 </div>
   }  
 
