@@ -40,8 +40,16 @@
     margin-left: 30px;
     border: 1px solid darkgrey;
     font-size: 17px;
+    position: relative;
   }
   .logo{
     font-size: 27px;
     
+  }
+  .search_icon{
+    position: absolute;
+    top: 25px;
+    left: 520px;
+    font-size: larger;
+
   }

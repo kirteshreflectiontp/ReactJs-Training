@@ -10,10 +10,10 @@ const Header = () => {
         <span className='logo'>LoGo</span>
         <span><Inputprops className='search_input' type="text" placeholder="Search Users by Name" /><i class="fa-solid fa-magnifying-glass search_icon"></i></span>
     </div>
-    <span ><i class="fa-light fa-video-plus"></i></span>
+   
     <div className='header_clicks'>
-        <div><button className='header_button'>UPLOAD VIDEO</button></div>
-        <div><button className='dots_button'><span><i class="fa-regular fa-ellipsis-vertical"></i></span></button></div>
+        <div><button className='header_button'><i class="fa-solid fa-video-plus"></i>UPLOAD VIDEO</button></div>
+        <div><button className='dots_button'><span><i class="fa-solid fa-ellipsis-vertical"></i></span></button></div>
     </div>
 </div>
 </>
