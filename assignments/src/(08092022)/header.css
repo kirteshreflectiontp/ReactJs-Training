@@ -1,0 +1,47 @@
+.parent_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin: 0px auto;
+    padding-bottom: 25px;
+}
+.header_button{
+    font-size:15px;
+    background-image: linear-gradient(to right, #dc2430, #7b4397 40%  );
+    margin: 10px 0px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+  }
+  .dots_button{
+    margin: 10px 0px;
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #fb3570, #9c20aa) border-box;
+  }
+  .header_clicks{
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+  }
+  .search_input{
+    padding: 12px;
+    border-radius: 15px;
+    width: 400px;
+    margin-left: 30px;
+    border: 1px solid darkgrey;
+    font-size: 17px;
+  }
+  .logo{
+    font-size: 27px;
+    
+  }
