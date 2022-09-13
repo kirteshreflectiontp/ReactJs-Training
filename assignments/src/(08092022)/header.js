@@ -25,7 +25,7 @@ const Header = () => {
                         <div className='banner-overlay'></div>
                         <div className='banner-list'>
                         <Navbar/>
-                        <button onClick={saveLink}>Save</button>
+                        <button onClick={saveLink}>Close</button>
                         </div>
 
                     </div>
