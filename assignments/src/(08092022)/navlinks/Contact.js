@@ -1,11 +1,14 @@
 import React from 'react';
-
+import Header from '../header'
+import Banner from '../banner'
 
 const Contact = () => {
     return (
         <div>
            
-         <div> Contact</div>  
+           <Header/> 
+           <Banner/>
+
         </div>
     );
 };

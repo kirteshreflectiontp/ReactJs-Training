@@ -1,11 +1,11 @@
 
-import Webpage from './(08092022)/webpage'
+import Navbar from './(08092022)/Navbar'
 import './App.css';
 
 function App() {
   return (
     <>
-    <Webpage/>
+    <Navbar/>
     </>
   );
 }

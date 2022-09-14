@@ -53,7 +53,11 @@
     font-size: larger;
 
   }
-  .Nav-Li{
-padding: 10px ;
-margin:10px;
+  .nav_list{
+position: absolute;
+right: 20px;
+top: 20px;
+background-color:aliceblue;
+padding: 20px;
+
   }

@@ -1,12 +1,12 @@
 import Inputprops from '../(30082022)/inputprops';
 import './header.css';
-import React, { useState } from 'react';
-import Navbar from './Navbar';
+import React,{useState} from 'react';
+import Nav from './navlinks/nav';
+
+
 const Header = () => {
-    const [edit, setPage] = useState(false);
-    const saveLink = () => {
-        setPage(false);
-    }
+    const [dp, setDp] = useState(true);
+    
     return (
 <>
 <div className="parent_header">
@@ -17,20 +17,13 @@ const Header = () => {
    
     <div className='header_clicks'>
         <div><button className='header_button'><i class="fa-solid fa-video-plus"></i>UPLOAD VIDEO</button></div>
-        <div><button className='dots_button' onClick={() => setPage(true)}><span><i class="fa-solid fa-ellipsis-vertical "></i></span></button></div>
+        <div><button className='dots_button' onClick={(e) => {
+          e.preventDefault();
+          setDp(!dp);
+        }}><span><i class="fa-solid fa-ellipsis-vertical "></i></span></button></div>
+       {dp && <div><Nav/></div>}
     </div>
 </div>
-{edit &&
-                    <div>
-                        <div className='banner-overlay'></div>
-                        <div className='banner-list'>
-                        <Navbar/>
-                        <button onClick={saveLink}>Close</button>
-                        </div>
-
-                    </div>
-
-                }
 </>
     )
 }
