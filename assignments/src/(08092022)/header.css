@@ -55,9 +55,10 @@
   }
   .nav_list{
 position: absolute;
-right: 20px;
+right: 40px;
 top: 20px;
-background-color:aliceblue;
-padding: 20px;
-
+background-color:lightblue;
+padding: 20px 20px;
+border-radius: 10px;
   }
+  
