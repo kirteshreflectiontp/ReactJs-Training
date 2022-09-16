@@ -1,9 +1,9 @@
 import './main.css';
 import React from 'react'
 import Banner from './banner'
-
+import Videoblock from './Videoblock';
 import Profileimg from './images/profileimg.jpg'
-import Videonav from './videonav';
+
 
 
 const Main = () => {
@@ -27,7 +27,7 @@ const Main = () => {
         </div>
     </div>
     <div>
-        <Videonav/>
+        <Videoblock/>
     </div>
 </div>
 </>

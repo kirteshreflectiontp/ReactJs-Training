@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../header'
-import Videonav from '../videonav'
+
+import Videoblock from '../Videoblock';
 const About = () => {
     return (
         <div>
             <Header/>
-            <Videonav/>
+            <Videoblock/>
             
         </div>
     );
