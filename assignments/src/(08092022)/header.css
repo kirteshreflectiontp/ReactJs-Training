@@ -28,6 +28,14 @@
     border: 2px solid transparent;
     background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #fb3570, #9c20aa) border-box;
   }
+  .searchResult{
+    position: absolute;
+    top: 65px;
+    left: 150px;
+    background-color: white;
+    width: 400px;
+    font-size: 18px;
+  }
   .header_clicks{
     display: flex;
     width: 220px;

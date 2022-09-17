@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Video1 from './images/clip.mp4'
 import Video2 from './images/Clip2.mp4'
 
+
 import Videotab from './videotab'
 const Videoblock = () => {
+ 
     const videoTabs =[
     {
       key : 'My-Videos',
