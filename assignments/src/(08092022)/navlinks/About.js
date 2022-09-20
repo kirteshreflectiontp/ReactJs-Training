@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../header'
 
-import Videoblock from '../Videoblock';
+
 const About = (props) => {
     props.setInitialPage('About');
     const currentUser = sessionStorage.username;
@@ -18,7 +18,7 @@ const About = (props) => {
     return (
         <div>
             <Header/>
-            <Videoblock/>
+           
             <br/>
             <br/>
             <div  className='data_user'>Name:{userData?.fullname}  </div>

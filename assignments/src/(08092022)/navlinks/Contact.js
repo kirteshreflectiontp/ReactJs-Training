@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../header'
-import Banner from '../banner'
 
 const Contact = (props) => {
     props.setInitialPage('Contact');
@@ -19,7 +18,7 @@ const Contact = (props) => {
         <div>
            
            <Header/> 
-           <Banner/>
+          
            <br/>
            <br/>
            <div className='data_user'>Email:{userData?.email} </div>
