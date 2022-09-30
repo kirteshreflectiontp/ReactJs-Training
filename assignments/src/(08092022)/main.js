@@ -1,13 +1,29 @@
 import './main.css';
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Banner from './banner'
 import Videoblock from './Videoblock';
 import Profileimg from './images/profileimg.jpg'
+import {Link } from 'react-router-dom';
+import UserContext from './UserContext';
 
 
 
 const Main = () => {
-
+    const currentUser = sessionStorage.username;
+    const userList = JSON.parse(localStorage.userList);
+    const [userData,setUserData] = useState();
+    const {loggedInUser,setLoggedInUser} = useContext(UserContext)
+    
+    useEffect(() => {
+        userList?.map((user) => {
+            let logUser = JSON.parse(user);
+            if(logUser.username === currentUser){
+                setUserData(logUser);
+                setLoggedInUser(logUser)
+            }
+        })
+    },[!userData])
+     
     return (
 <>
 <div>
@@ -17,11 +33,11 @@ const Main = () => {
         <div> <img className='profile-img' src={Profileimg} alt='img'/></div>
         <div className='profile_block2'>
         <div className='profile_name' >
-           <div className='name'>Wilson Franci</div> 
-           <div  className='town'>Minnesota,MN</div> 
+           <div className='name'>{loggedInUser?.fullname}</div> 
+           <div  className='town'>{loggedInUser?.address}</div> 
         </div>
         <div>
-         <button className='profile_button'><i class="fa-duotone fa-pen-line"></i> EDIT PROFILE</button>
+         <button className='profile_button'><i class="fa-duotone fa-pen-line"><Link to="/Editprofile">Edit Profile</Link></i></button>
          
         </div>
         </div>

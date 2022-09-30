@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Video1 from './images/clip.mp4'
 import Video2 from './images/Clip2.mp4'
 

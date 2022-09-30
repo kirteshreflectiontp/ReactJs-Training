@@ -1,31 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import Header from '../header'
+import UserContext from '../UserContext';
 
 
 const About = (props) => {
     props.setInitialPage('About');
-    const currentUser = sessionStorage.username;
-    const userList = JSON.parse(localStorage.userList);
-    const [userData,setUserData] = useState();
-    useEffect(() => {
-        userList?.map((user) => {
-            let logUser = JSON.parse(user);
-            if(logUser.username === currentUser){
-                setUserData(logUser);
-            }
-        })
-    },[userData])
+    const {loggedInUser} =  useContext(UserContext);
+   
     return (
         <div>
             <Header/>
            
             <br/>
             <br/>
-            <div  className='data_user'>Name:{userData?.fullname}  </div>
+            <div  className='data_user'>Name:{loggedInUser?.fullname}  </div>
             <br/>
-            <div  className='data_user'> Address:{userData?.address}</div>
+            <div  className='data_user'> Address:{loggedInUser?.address}</div>
             <br/>
-            <div  className='data_user'>UserName:{userData?.username}</div>
+            <div  className='data_user'>UserName:{loggedInUser?.username}</div>
             
         </div>
     );
