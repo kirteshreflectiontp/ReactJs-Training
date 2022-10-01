@@ -4,6 +4,7 @@
    width: 1440px;
     margin: 0px auto;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .profile_block2{
     display: flex;
@@ -91,12 +92,14 @@
   .vid{
 border-radius: 10px;
 width :450px ;
+height: 250px;
 
   }
   .video_block{
     width: 1440px;
     margin: 0px auto;
-    margin-top: 25px;
+    margin-top: 20px;
+ font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-around;
   }

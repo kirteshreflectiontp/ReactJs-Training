@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0px auto;
     padding-bottom: 25px;
 }
@@ -69,4 +69,52 @@ background-color:lightblue;
 padding: 20px 20px;
 border-radius: 10px;
   }
-  
+  .Video_upload{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    top: calc((100% - 300px)/2);
+    left:calc((100% - 400px)/2);
+    z-index: 5;
+    box-shadow: 0 0 10px rgb(0);
+  }
+  .Video_upload input{
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+box-sizing: border-box;
+  }
+  .Video_upload button{
+    font-size:15px;
+    background-image: linear-gradient(to right, #dc2430, #7b4397 40%  );
+    margin: 10px 0px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid transparent;
+  }
+  .Video_upload h2{
+    color: black;
+  }
+  .Upload_video-Overlay{
+    position: fixed;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.3;
+  }

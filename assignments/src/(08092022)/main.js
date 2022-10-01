@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import Banner from './banner'
 import Videoblock from './Videoblock';
 import Profileimg from './images/profileimg.jpg'
-import {Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import UserContext from './UserContext';
 
 
@@ -22,8 +22,11 @@ const Main = () => {
                 setLoggedInUser(logUser)
             }
         })
-    },[!userData])
-     
+    },[userData])
+    const navigate = useNavigate();
+     const editProfile = () => {
+        navigate('/Editprofile')
+     }
     return (
 <>
 <div>
@@ -37,7 +40,7 @@ const Main = () => {
            <div  className='town'>{loggedInUser?.address}</div> 
         </div>
         <div>
-         <button className='profile_button'><i class="fa-duotone fa-pen-line"><Link to="/Editprofile">Edit Profile</Link></i></button>
+         <button className='profile_button' onClick={editProfile}><i class="fa-duotone fa-pen-line">Edit Profile</i></button>
          
         </div>
         </div>

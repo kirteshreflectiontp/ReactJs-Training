@@ -8,20 +8,25 @@ import { useState } from 'react';
 import UserContext from './UserContext';
 import ContactContext from './ContactContext';
 import Editprofile from './Editprofile';
-
+import VideoContext from './VideoContext';
 function Navbar() {
   const [initialPage,setInitialPage] = useState('login');
   const [newNumber,setNewNumber] = useState('');
   const [currentUser, setcurrentUser] = useState();
+  const [videos, setVideos] = useState(localStorage.getItem('videos') ? JSON.parse(localStorage.getItem('videos')): []);
    const setCurrentUserData = (data) => {
     setcurrentUser(data)
   }
   const setMobileNumber = (number) => {
     setNewNumber(number);
   }
+  const setUserVideos = (videoList) => {
+    setVideos(videoList)
+  }
     return (
      <BrowserRouter>
      <UserContext.Provider value = {{loggedInUser:currentUser, setLoggedInUser : setCurrentUserData}}>
+     <VideoContext.Provider value = {{videoData:videos, setVideoData: setUserVideos}}>
       <ContactContext.Provider value = {{mobilenumber:newNumber,setMobileNumber}}>
       <div>
         {(initialPage !== 'login' && initialPage !== 'signup' )}
@@ -35,6 +40,7 @@ function Navbar() {
         </Routes>
       </div>
       </ContactContext.Provider>
+      </VideoContext.Provider>
       </UserContext.Provider>
     </BrowserRouter>
         
