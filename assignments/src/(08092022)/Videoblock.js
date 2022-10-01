@@ -2,11 +2,10 @@ import React, { useContext } from 'react'
 import Video1 from './images/clip.mp4'
 import Video2 from './images/Clip2.mp4'
 import VideoContext from './VideoContext'
-import UserContext from './UserContext'
 import Videotab from './videotab'
 const Videoblock = () => {
 const {videoData} = useContext(VideoContext);
-const {loggedInUser} = useContext(UserContext)
+
 
     const videoTabs =[
     {
@@ -14,13 +13,12 @@ const {loggedInUser} = useContext(UserContext)
       title : 'My-Videos',
       content: [(<div className='video_block'>
         {videoData?.map((video, index) => (
-          <>{loggedInUser?.username === video.username &&
+          
       <div  key={index}>
         <h3>{video.title}</h3>
         <iframe className='vid' src = {video.url} />
         </div>
-        }
-        </>
+        
       ))}
   </div>
       )]
