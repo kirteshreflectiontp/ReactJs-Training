@@ -7,6 +7,7 @@ const Nav = () => {
             <li className='Nav-Li'><Link to="/Home">Home</Link></li>
             <li className='Nav-Li'><Link to="/About">About</Link></li>
             <li className='Nav-Li'><Link to="/Contact">Contact</Link></li>
+            <li className='Nav-Li'><Link to="/">Logout</Link></li>
         </ul>
         <Outlet/>
         </>

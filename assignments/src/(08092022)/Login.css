@@ -59,6 +59,9 @@ input{
       .error_message{
        color: red;
       }
+      .try{
+        color: blue;
+      }
       .foot{
         display: flex;
         justify-content: space-between;

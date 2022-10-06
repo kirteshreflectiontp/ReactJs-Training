@@ -16,7 +16,7 @@ const {videoData} = useContext(VideoContext);
           
       <div  key={index}>
         <h3>{video.title}</h3>
-        <iframe className='vid' src = {video.url} />
+        <iframe title='vidio' className='vid' src = {video.url} />
         </div>
         
       ))}

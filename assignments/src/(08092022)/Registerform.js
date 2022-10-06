@@ -10,6 +10,8 @@ const Registerform = (props) => {
     const [mobilenumber,setMobileNumber] = useState(props.page === 'edit' ? loggedInUser?.mobilenumber :'');
     const [address,setAddress] = useState(props.page === 'edit' ? loggedInUser?.address :'');
     const [errormessage,setErrorMessage] = useState();
+    const [userCheck,setUserCheck] = useState(false);
+    const [suggestion,setSuggestion] = useState(false);
     const validateUser = () => {
       let valid = false;
       if(  email !==''&& fullname !==''&& username !== ''&&  password !==''  && mobilenumber !=='' && address !==''){
@@ -17,13 +19,32 @@ const Registerform = (props) => {
       }
       return valid;
     }
-    const Register = (userList,users) => {
-        userList.push(JSON.stringify(users));
-        localStorage.setItem('userList',JSON.stringify(userList));
-        console.log('userList', userList);
-        setErrorMessage('')
-        window.location.href = '/';
+    const UserAlreadyRegistered = (userList, username) => {
+        const filteredUserList = userList?.filter((user) => {
+            const userObject = JSON.parse(user);
+            if(userObject.username === username){
+                return user;
+            }
+        })
+        return filteredUserList;
     }
+    const Register = (userList,users) => {
+if(UserAlreadyRegistered(userList,users.username).length > 0) {
+setUserCheck(users.username);
+let value = Math.random() * 9;
+if(UserAlreadyRegistered(userList,users.username + parseInt(value)).length === 0){
+    setSuggestion(users.username + parseInt(value))
+}
+}
+else{
+    setUserCheck(false);
+    userList.push(JSON.stringify(users));
+    localStorage.setItem('userList',JSON.stringify(userList));
+    console.log('userList', userList);
+    setErrorMessage('')
+    window.location.href = '/';
+}    
+}
     const UpdateProfile = (userList,users) => {
         const filteredUserList = userList.filter((user) => {
             const userObject = JSON.parse(user);
@@ -66,6 +87,7 @@ const Registerform = (props) => {
                             <div className='login_head'>Sign Up</div>
                             <div>Wellcome! Please Enter Your Details</div>
                             <div className='error_message'>{errormessage}</div>
+                           {userCheck && <div className='error_message'>{userCheck} Username is Allready Exist <b className='try'>Try:{suggestion}</b>  </div>}
                         </div>
                         :
                         <div className="main">
