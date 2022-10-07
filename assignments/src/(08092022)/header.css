@@ -69,6 +69,18 @@ background-color:lightblue;
 padding: 20px 20px;
 border-radius: 10px;
   }
+  .choose_upload{
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  .choose_upload div{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  .choose_upload div:hover{
+    border-bottom: 2px solid black;
+  }
   .Video_upload{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
