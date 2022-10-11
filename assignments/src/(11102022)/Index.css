@@ -1,0 +1,22 @@
+.out_block{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+.Pic{
+    height: 200px;
+width: 200px;
+}
+.out_block button{
+ padding: 10px;
+ background-color: cornflowerblue;
+ border: none;
+ border-radius: 5px;
+ margin: 10px 0px;
+ font-size: larger;
+}
+.out_block div{
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: larger;
+}

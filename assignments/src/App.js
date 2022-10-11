@@ -1,11 +1,9 @@
-
-import Navbar from './(08092022)/Navbar'
-
-
+import Index from "./(11102022)/Index";
+import logo from '../src/(11102022)/banner1.png';
 function App() {
   return (
     <>
-    <Navbar/>
+    <Index  logo ={logo} text='User Data' />
     </>
   );
 }
