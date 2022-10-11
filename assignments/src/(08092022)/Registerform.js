@@ -49,7 +49,7 @@ else{
         const filteredUserList = userList.filter((user) => {
             const userObject = JSON.parse(user);
             if(userObject.username !== loggedInUser.username){
-                return user;
+                return (user);
             }
         })
         filteredUserList.push(JSON.stringify(users));
@@ -99,13 +99,13 @@ else{
                         <br />
                         <br />
                             <div className='input-data'>
-                                <input onChange={(event) => setEmail(event.target.value)} type="text" placeholder="Email Address" />
+                                <input name='email' value={email}  onChange={(event) => setEmail(event.target.value)} type="text" placeholder="Email Address" />
                             </div>
                             <div className='input-data'>
-                                <input onChange={(event) => setFullName(event.target.value)} type="text" placeholder="Full Name" />
+                                <input  name='fullname' value={fullname} onChange={(event) => setFullName(event.target.value)} type="text" placeholder="Full Name" />
                             </div>
                             <div className='input-data'>
-                                <input onChange={(event) => setUserName(event.target.value)} type="text" placeholder="User Name" />
+                                <input  name='username' value={username} onChange={(event) => setUserName(event.target.value)} type="text" placeholder="User Name" />
                             </div>
                             {props.page === 'edit' ? <></> :
                             <div className='input-data'>
@@ -113,10 +113,10 @@ else{
                             </div>
                             }
                             <div className='input-data'>
-                                <input onChange={(event) => setMobileNumber(event.target.value)} type="number" placeholder="Enter  Mobile Number" />
+                                <input type='number' name='mobilenumber' value={mobilenumber} onChange={(event) => setMobileNumber(event.target.value)}  placeholder="Enter  Mobile Number" />
                             </div>
                             <div className='input-data'>
-                                <input onChange={(event) => setAddress(event.target.value)} type="textr" placeholder="Enter your address" />
+                                <input  name='address' value={address} onChange={(event) => setAddress(event.target.value)} type="textr" placeholder="Enter your address" />
                             </div>
                             <br />
                             <br />

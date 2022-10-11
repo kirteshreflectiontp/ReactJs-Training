@@ -12,7 +12,7 @@ import VideoContext from './VideoContext';
 function Navbar() {
   const [initialPage,setInitialPage] = useState('login');
   const [newNumber,setNewNumber] = useState('');
-  const [currentUser, setcurrentUser] = useState();
+  const [currentUser, setcurrentUser] = useState(sessionStorage?.username);
   const [videos, setVideos] = useState(localStorage.getItem('videos') ? JSON.parse(localStorage.getItem('videos')): []);
    const setCurrentUserData = (data) => {
     setcurrentUser(data)
