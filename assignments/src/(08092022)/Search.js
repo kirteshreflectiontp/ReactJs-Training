@@ -1,20 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const Search = () => {
-    const [searchValue,setSearchValue] = useState('');
-    const [searchResult,setSearchResult] = useState();
+   
     const searchRef = useRef();
     const [searcherror,setSearchError] = useState();
     const SearchOutput = () => {
         if(searchRef.current.value === ''){
-            searchRef.current.style.border = '1px solid red';
+            searchRef.current.style.border = '2px solid red';
             setSearchError('Please Enter Profile Name')
         }
         else{
             searchRef.current.style.border = '1px solid darkgrey';
-            setSearchError('')
+            setSearchError('')      
         }
     }
+    const [searchValue,setSearchValue] = useState('');
+    const [searchResult,setSearchResult] = useState();
     useEffect(() => {
         if(searchValue.length > 0){
             fetch('https://jsonplaceholder.typicode.com/users').then((response) => response.json()).then((result)=>{
