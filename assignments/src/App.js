@@ -1,8 +1,8 @@
-import Navbar from './(08092022)/Navbar'
+import ReducerApp from "./(27102022)/ReducerApp";
 function App() {
   return (
     <>
-  <Navbar/>
+  <ReducerApp/>
     </>
   );
 }
