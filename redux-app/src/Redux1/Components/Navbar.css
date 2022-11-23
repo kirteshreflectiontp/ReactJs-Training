@@ -1,0 +1,20 @@
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+  padding: 10px 20px;
+  margin: 5px 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.link:hover{
+    background-color: oldlace;
+    color: black;
+}
+.link{
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+  color: white;
+}

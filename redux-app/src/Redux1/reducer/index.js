@@ -1,7 +1,7 @@
 import{createStore} from "redux";
-import scrollbar from "./scrollbar";
+import handler from "./handler";
 
-function configureStore(state = {alert:true}){
-    return createStore(scrollbar,state)
+function configureStore(state){
+    return createStore(handler,state)
 }
 export default configureStore;
