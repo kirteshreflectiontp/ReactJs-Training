@@ -10,7 +10,7 @@ import Productpage from './Redux1/Components/Productpage'
 import Addproduct from'./Redux1/Components/Addproduct';
 
 function App(props) {
-  console.log(props)
+ 
   useEffect(()=>{
     props.updateProduct(products)
   },[props])

@@ -1,35 +1,35 @@
 body{
-  background-color:black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-  color: crimson;
-  text-align: start;
-  margin: 15px 25px;
-}
-.products{
-  margin: 5px;
-  padding: 10px;
-  display: flex;
-  border-top: 1px solid lightskyblue;
-}
-.main_logo{
-  font-size: larger;
-  font-weight: 900;
-  padding: 20px;
-  margin: 20px 0px;
-  background-color: dimgray;
-  text-align: center;
-  color: oldlace;
-}
-.Product-title{
-  padding: 10px 40px;
-  font-size: 24px;
-  font-weight: bold;
-  color: oldlace;
- 
-}
-.Product-price{
-  color: coral;
-  padding: 10px 5px;
-}
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1{
+    color: crimson;
+    text-align: start;
+    margin: 15px 25px;
+  }
+  .products{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    border-top: 1px solid lightskyblue;
+  }
+  .main_logo{
+    font-size: larger;
+    font-weight: 900;
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: dimgray;
+    text-align: center;
+    color: oldlace;
+  }
+  .Product-title{
+    padding: 10px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: oldlace;
+   
+  }
+  .Product-price{
+    color: coral;
+    padding: 10px 5px;
+  }
