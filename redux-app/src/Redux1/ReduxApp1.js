@@ -1,13 +1,13 @@
-import {updateProduct} from './Redux1/actions'
-import './App.css';
+import {updateProduct} from './actions'
+import './ReduxApp1.css';
 import {connect} from 'react-redux';
-import {products} from './Redux1/Components/Products'
+import {products} from './Components/Products'
 import { useEffect } from 'react';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
-import Homepage from './Redux1/Components/Homepage';
-import Productlist from './Redux1/Components/Productlist';
-import Productpage from './Redux1/Components/Productpage'
-import Addproduct from'./Redux1/Components/Addproduct';
+import Homepage from './Components/Homepage';
+import Productlist from './Components/Productlist';
+import Productpage from './Components/Productpage'
+import Addproduct from'./Components/Addproduct';
 
 function App(props) {
  

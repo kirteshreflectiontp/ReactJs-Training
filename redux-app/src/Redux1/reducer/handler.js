@@ -6,7 +6,7 @@ export default(state = [],action) => {
                 products:action.products
             };
             case 'ADD_PRODUCT':
-                alert('oppp')
+            
             return{
                 ...state,
                 products: {arrayOfProducts: action.products}

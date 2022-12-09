@@ -17,7 +17,7 @@ const addNewProduct = ()=>{
   }
   let allProducts = props.products.arrayOfProducts;
   allProducts.push(product);
-  props.addProduct(allProducts);
+  props.addproduct(allProducts);
 }
   return (
     <div>
@@ -32,7 +32,7 @@ const addNewProduct = ()=>{
             <input type="text" onChange={(event)=>setProductName(event.target.value)} placeholder='Enter Product Name'></input>
             <label>Product Price</label>
             <input type="text" onChange={(event)=>setProductPrice(event.target.value)} placeholder='Enter Price'></input>
-            <button onClick={addNewProduct} className='btn'>Submit</button>
+            <button type='button' onClick={addNewProduct} className='btn'>Submit</button>
         </form>
 
     </div>
