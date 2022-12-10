@@ -10,7 +10,6 @@ const Homepage = (props) => {
   useEffect(()=>{
     setUserList(props.user);
     props.updateProfile();
-    console.log(props.user)
   },[])
 
   return (
@@ -21,7 +20,7 @@ const Homepage = (props) => {
      {userList?.map((client)=>( 
       sessionStorage.username == client.username &&
         <div className='profile'>
-          <div className='Profile-li'>Name:  {client.fullname}</div>
+          <div className='Profile-li'>Name: {client.fullname}</div>
           <div className='Profile-li'>Username:  {client.username}</div>
           <div className='Profile-li'>Mobile Number:  {client.mobilenumber}</div>
           <div className='Profile-li'>Address:  {client.address}</div>
