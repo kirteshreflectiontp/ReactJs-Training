@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../ReduxApp2.css';
+import '../ReduxApp1.css';
 import { useEffect, useState } from 'react';
 import {updateProfile} from '../actions/index'
 import {connect} from 'react-redux';
@@ -22,7 +22,7 @@ const Login = (props) => {
           setErrorMessage('');
          sessionStorage.username = username;
          sessionStorage.password = password
-         window.location.href = './Homepage'
+         window.location.href = './homepage'
         }
         else{
           setErrorMessage('Enter Correct Credentials');
@@ -35,12 +35,12 @@ const Login = (props) => {
     <div className='main-page'>
          <h2 className='heading-signup'>LOGIN ACCOUNT</h2>
        <div className='error_message'>{errorMessage}</div>
-         <div><button> <Link to="/Registration" className='button-link' >SIGN UP</Link></button></div> 
-       <div><label>USERNAME</label></div>
-        <div> <input type='text'placeholder='Enter Username'  onChange={(e)=>setUsername(e.target.value)} value={username}/></div> 
-        <div><label>PASSWORD</label></div>
-        <div> <input type='text'placeholder='Create Password'  onChange={(e)=>setPassword(e.target.value)} value={password}/></div> 
-        <div><button onClick={login}> SIGN IN</button></div> 
+         <div><button  className='btn'> <Link to="/Registration" className='button-link' >SIGN UP</Link></button></div> 
+       <div><label className='login_label'>USERNAME</label></div>
+        <div> <input className='login_input' type='text'placeholder='Enter Username'  onChange={(e)=>setUsername(e.target.value)} value={username}/></div> 
+        <div><label className='login_label'>PASSWORD</label></div>
+        <div> <input  className='login_input'type='text'placeholder='Create Password'  onChange={(e)=>setPassword(e.target.value)} value={password}/></div> 
+        <div><button  className='btn' onClick={login}> SIGN IN</button></div> 
        
     </div>
     </>

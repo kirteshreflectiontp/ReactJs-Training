@@ -9,7 +9,7 @@ const Navbar = () => {
       <nav>
       <ul >
             <li>
-                <Link to="/" className='link'>Homepage</Link>
+                <Link to="/Homepage" className='link'>Homepage</Link>
             </li>
             <li>
                 <Link to="/productlist" className='link'>Product-list</Link>
@@ -19,6 +19,12 @@ const Navbar = () => {
             </li>
             <li>
                 <Link to="/addproduct" className='link'>Add-Product</Link>
+            </li>
+            <li>
+                <Link to="/profile" className='link'>Profile</Link>
+            </li>
+            <li>
+                <Link to="/" className='link'>Log-Out</Link>
             </li>
         </ul>
       </nav>

@@ -35,10 +35,15 @@ function Registration(props){
     <div className='main-page'>
       <h2 className='heading-signup'>CREATE ACCOUNT</h2>
       <div><button> <Link to="/" className='button-link' >LOG IN</Link></button></div> 
+      <div><label>NAME</label></div>
      <div> <input type='text'placeholder='Enter Your FullName' onChange={(e)=>setFullname(e.target.value)} value={fullname}/></div> 
+     <div><label>USERNAME</label></div>
      <div> <input type='text'placeholder='Enter Username'  onChange={(e)=>setUsername(e.target.value)} value={username}/></div> 
-     <div> <input type='number'placeholder='Enter Your Mobile Number'  onChange={(e)=>setMobilenumber(e.target.value)} value={mobilenumber}/></div> 
+     <div><label>CONTACT</label></div>
+     <div> <input type='number'placeholder='Enter Your Mobile Number'  onChange={(e)=>setMobilenumber(e.target.value)} value={mobilenumber}/></div>
+     <div><label>ADDRESS</label></div> 
      <div> <input type='text'placeholder='Enter Your Address'  onChange={(e)=>setAddress(e.target.value)} value={address}/></div> 
+     <div><label>PASSWORD</label></div>
      <div> <input type='text'placeholder='Create Password'  onChange={(e)=>setPassword(e.target.value)} value={password}/></div> 
      <div><button onClick={() => RegisterUser()}>SIGN UP</button></div> 
    

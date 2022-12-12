@@ -2,8 +2,8 @@ import React, { useEffect, useState }  from 'react'
 import {updateProfile} from '../actions/index'
 import {connect} from 'react-redux';
 import {addProfile} from '../actions/index'
-import { Link } from 'react-router-dom';
-const Homepage = (props) => {
+import Navbar from './Navbar';
+const Profile = (props) => {
   console.log(props)
   const [userList,setUserList]= useState();
 
@@ -14,19 +14,20 @@ const Homepage = (props) => {
   },[])
 
   return (
-  <div className='homepage'>
+  <div className='profilepage'>
       <h1>Profile Page</h1>
-      <h2>Profile Data</h2>
+      <Navbar/>
+      <div className='main_logo'>ShopKaro.com</div>
       <div>
       {userList?.map((client)=>( 
       sessionStorage.username == client.username &&
         <div className='profile'>
+           <h2>Profile Data</h2>
           <div className='Profile-li'>Name: {client.fullname}</div>
           <div className='Profile-li'>Username:  {client.username}</div>
           <div className='Profile-li'>Mobile Number:  {client.mobilenumber}</div>
           <div className='Profile-li'>Address:  {client.address}</div>
           <div className='Profile-li'>Password:  {client.password}</div>
-          <div className='btn'> <button><Link to="/" className='button-link' >Log Out</Link></button></div> 
         </div>
       ))}
       </div>
@@ -43,4 +44,4 @@ const mapStateToProps = state =>({
       addProfile:(user)=> dispatch(addProfile(user))
     })
     
-    export default connect(mapStateToProps,mapDispatchToProps)(Homepage);
+    export default connect(mapStateToProps,mapDispatchToProps)(Profile);

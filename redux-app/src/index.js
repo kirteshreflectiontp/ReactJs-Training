@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ReduxApp2 from './Redux2/ReduxApp2';
+import ReduxApp1 from './Redux1/ReduxApp1';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
-import configureStore from './Redux2/reducer/index';
+import configureStore from './Redux1/reducer/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store ={configureStore()}>
-    <ReduxApp2 />
+    <ReduxApp1 />
     </Provider>
   </React.StrictMode>
 );
