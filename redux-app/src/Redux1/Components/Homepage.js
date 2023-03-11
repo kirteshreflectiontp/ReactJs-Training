@@ -10,7 +10,7 @@ const Homepage = (props) => {
   <div className='main_logo'>ShopKaro.com</div>
         {props?.products?.arrayOfProducts?.map((products,index) => (
            (index < 2) &&
-           <div className='products'>
+           <div className='products'key={products.id}>
 <div className='Product-img'>
 <img  src={products.imgUrl} width="250px" height="250px" alt="img"/>
 </div>

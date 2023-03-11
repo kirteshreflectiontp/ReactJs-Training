@@ -29,7 +29,7 @@ function Registration(props){
   }
   useEffect(()=>{
     props.updateProfile();
-  },[])
+  },[props])
  
   return (
     <div className='main-page'>

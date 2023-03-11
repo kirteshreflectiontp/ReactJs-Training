@@ -19,8 +19,8 @@ const Homepage = (props) => {
       <h2>Profile Data</h2>
       <div>
       {userList?.map((client)=>( 
-      sessionStorage.username == client.username &&
-        <div className='profile'>
+      sessionStorage.username === client.username &&
+        <div className='profile' key={client.id}>
           <div className='Profile-li'>Name: {client.fullname}</div>
           <div className='Profile-li'>Username:  {client.username}</div>
           <div className='Profile-li'>Mobile Number:  {client.mobilenumber}</div>

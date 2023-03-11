@@ -11,7 +11,7 @@ const Profile = (props) => {
     props.updateProfile();
     setUserList(props.user);
     console.log(props.user)
-  },[])
+  },[props])
 
   return (
   <div className='profilepage'>
@@ -20,8 +20,8 @@ const Profile = (props) => {
       <div className='main_logo'>ShopKaro.com</div>
       <div>
       {userList?.map((client)=>( 
-      sessionStorage.username == client.username &&
-        <div className='profile'>
+      sessionStorage.username === client.username &&
+        <div className='profile'key={client.id}>
            <h2>Profile Data</h2>
           <div className='Profile-li'>Name: {client.fullname}</div>
           <div className='Profile-li'>Username:  {client.username}</div>

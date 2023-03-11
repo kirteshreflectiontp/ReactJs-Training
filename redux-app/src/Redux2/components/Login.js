@@ -18,7 +18,7 @@ const Login = (props) => {
         setUserList(props.user);
       if(username !== '' && password !==''){
         userList?.map((currentUser) => {
-        if(currentUser.username === username && currentUser.password === password){
+        if(currentUser.username ===username && currentUser.password === password){
           setErrorMessage('');
          sessionStorage.username = username;
          sessionStorage.password = password
