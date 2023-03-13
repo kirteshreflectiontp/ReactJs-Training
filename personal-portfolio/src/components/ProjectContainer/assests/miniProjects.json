@@ -1,72 +1,34 @@
 {
     "projects": [
      {
-        "title": "Better Thoughts",
-        "Description": "Fetch the Random Quotes from AdviceSlip API, for better thoughts",
-        "tech": ["ReactJS", "Advice-Slip API", "Netlify"],
+        "title": "BreakOut Game",
+        "Description": "Created a BreakOut Ball Game",
+        "tech": ["HTML", "CSS", "JavaScript"],
         "links": {
-            "visit": "https://suspicious-brahmagupta-82054e.netlify.app/",
-            "code": "https://github.com/SidheshBokade/Random-quote-generator-"
+            "visit": "https://sus.netlify.app/",
+            "code": "https://github.com/kirteshreflectiontp/Mini-Projects/tree/main/Breakout%20Game"
             
         }
     }
         ,{
-            "title": "Analog Clock",
-            "Description": "Simple Analog Clock",
+            "title": "Typing Game",
+            "Description": "Simple Speed Typing Analyser",
             "tech": ["HTML","CSS","Javasript"],
             "links": {
-                "visit": "https://inspiring-boyd-03e850.netlify.app/",
-                "code": "https://github.com/SidheshBokade/Analogclock"
+                "visit": "https://inspir.netlify.app/",
+                "code": "https://github.com/kirteshreflectiontp/Mini-Projects/tree/main/Typing%20Game"
             }
         },
         {
-            "title": "Mausam",
-            "Description": "A weather app made with javascript.The UI of the app changes according to the weather.",
+            "title": "Video Player",
+            "Description": "Simple mini Video Player.",
             "tech": ["Javasript", "Reactjs", "CSS"],
             "links": {
-                "visit": "https://mausaam.netlify.app/",
-                "code": "https://github.com/SidheshBokade/Mausam",
-                "video": "video link"
+                "visit": "https://mau.netlify.app/",
+                "code": "https://github.com/kirteshreflectiontp/Mini-Projects/tree/main/Video%20Player%20Custom"
+               
             }
         }
-        ,{
-            "title": "Todo-List",
-            "Description": "To keep Daily track Reactjs Todolist is here for you ",
-            "tech": ["HTML", "Javasript", "CSS"],
-            "links": {
-                "visit": "https://eager-carson-955226.netlify.app/",
-                "code": "https://github.com/SidheshBokade/TodoList"
-            }
-        },
-        {
-            "title": "Quiz-App",
-            "Description": "A single page app for Daily Quiz",
-            "tech": ["Javasript", "HTML", "CSS"],
-            "links": {
-                "visit": "https://xenodochial-mcclintock-1762b0.netlify.app/",
-                "code": "https://github.com/SidheshBokade/Quizapp"
-            }
-        },
-        {
-            "title": "Special Ocassion Counters App",
-            "Description": " ",
-            "tech": ["Javasript", "HTML", "CSS"],
-            "links": {
-                "visit": "https://keen-raman-29acbe.netlify.app/",
-                "code": "https://github.com/SidheshBokade/Counter-App"
-            }
-        },
-        {
-            "title": "Stop Watch",
-            "Description": "Simple Stop Watch.",
-            "tech": ["Javasript", "HTML", "CSS"],
-            "links": {
-                "visit": "https://github.com/SidheshBokade/StopWatch",
-                "code": "https://github.com/SidheshBokade/StopWatch",
-                "video": "video link"
-            }
-        }
-
-
+        
     ]
 }

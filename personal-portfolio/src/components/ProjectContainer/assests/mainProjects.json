@@ -30,7 +30,7 @@
         {
             "title": "Food For You",
             "Description": "A Food Shop based UI Page including slider created in teamwork",
-            "tech": ["Html", "CSS","JavaScript"],
+            "tech": ["Html", "CSS","JavaScript","GitHub"],
             "links": {
                 "code": "https://github.com/kirteshreflectiontp/Food-For-You"
             }
