@@ -1,38 +1,38 @@
 {
     "projects": [{
-            "title": "Couple-Chat",
-            "Description": "It is a real time one by one Video chat application. One can call someone by copying their name & generating ID and one can recive call by just drubbing that ID, Hustle-free chat.",
-            "tech": ["ReactJs","Web-RTC", "socket.io", "Heroku"],
+            "title": "Custom-Product(E-Commerce Website)",
+            "Description": "It is a E-Commerce Website in which A customer can customize our products as per need..",
+            "tech": ["ReactJs","Prisma", "PostegreSQL", "TypeScript","NestJS"],
             "links": {
-                "visit": "https://avdheshvideoapp.netlify.app/",
-                "code": "https://github.com/SidheshBokade/VideoChatApp"
+                "visit": "https://kritesh.netlify.app/",
+                "code": "https://github.com/"
                 
             }
         },
         {
-            "title": "Go-Corona-Go",
-            "Description": "This app provides real time stats of covid-19 (global, countrywise) , displays the total deaths,recovered,infected.",
-            "tech": ["Javasript", "ReactJs", "ChartJs","Material UI"],
+            "title": "Personal Video Collection Site",
+            "Description": "A Website in which a user can make account and collect our favorite personal and youtube videos .",
+            "tech": ["Javasript", "ReactJs", "Html-Css"],
             "links": {
-                "visit": "https://vibrant-shannon-91178c.netlify.app/",
-                "code": "https://github.com/SidheshBokade/Go-Corona-Go"
+                "visit": "https://vibranc.netlify.app/",
+                "code": "https://github.com/kirteshreflectiontp/ReactJs-Training/tree/main/social-website"
             }
         },
         {
-            "title": "Algo-flow",
-            "Description": "Contains all types of algorithms and there visual representation.",
-            "tech": ["  Algorithms", "ReactJs"],
+            "title": "Personal Portfolio Site",
+            "Description": "A Personal React Developer Portfolio Profile Site",
+            "tech": ["Html-Css","JavaScript", "ReactJs"],
             "links": {
-                "visit": "https://algoflow.netlify.app/",
-                "code": "https://github.com/SidheshBokade/Algoflow"
+                "visit": "https://algof.netlify.app/",
+                "code": "https://github.com/kirteshreflectiontp/ReactJs-Training/tree/main/portfolio-react"
             }
         },
         {
-            "title": "Hotel-Midland-Management-System",
-            "Description": "There are mainly 3 types of room a person can book,Single-bed rooms,Double-bed rooms,Meeting rooms",
-            "tech": ["OOP", "C++"],
+            "title": "Food For You",
+            "Description": "A Food Shop based UI Page including slider created in teamwork",
+            "tech": ["Html", "CSS","JavaScript"],
             "links": {
-                "code": "https://github.com/SidheshBokade/Hotel-Midland-system"
+                "code": "https://github.com/kirteshreflectiontp/Food-For-You"
             }
         }
 
