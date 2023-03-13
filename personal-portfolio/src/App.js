@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import './App.css';
 import Space from './components/space/Space';
-import NavComp from './components/Nav/Nav';
+import Nav from './components/Nav/Nav';
 import Audio from './components/Audio/Audio';
 import Loader from './components/Loader/Loader';
 
@@ -24,7 +24,7 @@ function App() {
       <div className="App">
         <Space></Space>
         <div className="contentWrapper">
-          <NavComp></NavComp>
+          <Nav></Nav>
           <Audio></Audio>
         </div>
       </div>
