@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    height: 80%;
+    justify-content: center;
+}
+
+.container h3 {
+    background: rgba(49, 47, 47, 0.5);
+    border-radius: 10%;
+    width: max-content;
+    padding: 2%;
+    margin: 2%;
+    color: white;
+    font-weight: 100;
+    font-family: Poppins;
+}
+
+#big {
+    font-size: smaller !important;
+}
+
+#small {
+    font-size: xx-small !important;
+}

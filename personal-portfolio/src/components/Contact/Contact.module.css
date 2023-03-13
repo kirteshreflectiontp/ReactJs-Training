@@ -1,0 +1,163 @@
+.container {
+    margin-top: 0px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    overflow: auto;
+}
+
+.closebtn {
+    align-self: flex-end;
+    margin: 2% 3% 0% 0%;
+    background: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    color: rgba(234, 235, 241, 0.7);
+    font-weight: bolder;
+    font-size: larger;
+    padding: 2%;
+}
+
+/* contact me  */
+
+.container h1 {
+    font-weight: 100;
+    margin-left: 10%;
+    font-family: Poppins, Helvetica, sans-serif;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    font-size: medium;
+    color: white;
+    margin: 10%;
+}
+
+.itemContainer a {
+    text-decoration: none;
+    color: rgb(202, 202, 231);
+}
+
+.itemContainer button {
+    background: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(233, 221, 221, 0.6);
+    font-size: larger;
+    height: max-content;
+    outline: none;
+}
+
+/* contact bar */
+
+.contactBar {
+    display: flex;
+    margin: 2% 0 5% 0;
+    width: 50%;
+    color: white;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.contactBar a:visited {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+/* form  */
+
+.formStyle {
+    margin-left: 10%;
+}
+
+.formStyle label {
+    font-weight: 100;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    margin: 10% 0 !important;
+}
+
+.formStyle input {
+    margin-left: 15px;
+}
+
+.formStyle p {
+    margin: 5% 0;
+    font-size: small;
+}
+
+.formStyle form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.formStyle button {
+    align-self: center;
+    background: none;
+    margin: 5%;
+    background: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bolder;
+    font-size: medium;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding: 2% 5%;
+    outline: none;
+}
+
+.formStyle button:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+
+}
+
+@media(max-width:768px) {
+    .itemContainer {
+        font-size: small;
+    }
+
+    .contactBar {
+        width: 80%;
+    }
+
+    .itemContainer {
+        font-size: x-small !important;
+    }
+
+    .formStyle button {
+        background-size: auto;
+        font-size: medium;
+
+    }
+
+    .container h1 {
+        font-weight: 100;
+        font-size: x-large;
+    }
+
+    .contactBar {
+        margin: 15%;
+    }
+
+    .contactBar a {
+        margin: auto;
+        font-size: smaller;
+    }
+
+    .formStyle input,
+    textarea {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}

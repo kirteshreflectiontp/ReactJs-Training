@@ -1,0 +1,57 @@
+.audioContainer {
+    align-self: flex-end;
+    justify-self: flex-end;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.audioContainer button {
+    color: white;
+    margin: 5%;
+    background: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.audioContainer button:active {
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.audioContainer label {
+    color: white;
+
+}
+
+.audioContainer h3 {
+    color: white;
+    font-size: x-large;
+    font-weight: 100;
+    margin: 1px;
+    padding: 0;
+}
+
+.audioContainer h4 {
+    color: rgba(198, 204, 238, 0.9);
+    font-size: larger;
+    font-weight: 100;
+    margin: 1px;
+    padding: 0;
+}
+
+@media(max-width:760px) {
+    .audioContainer h3 {
+        font-size: medium;
+    }
+
+    .audioContainer h4 {
+        font-size: small;
+    }
+
+    .audioContainer i {
+        font-size: xx-large;
+    }
+}

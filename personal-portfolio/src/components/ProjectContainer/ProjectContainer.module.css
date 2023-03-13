@@ -1,0 +1,75 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    height: 70vh;
+
+}
+
+.topbar {
+    display: flex;
+    color: white;
+    font-size: small;
+    font-weight: 80 !important;
+    font-family: Poppins, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    justify-content: space-between;
+}
+
+.topbar h1 {
+    margin: 2% 0 5px 15px;
+}
+
+#activeBtn {
+    background: rgba(193, 196, 206, 0.3) !important;
+}
+
+.content {
+    height: auto;
+    min-height: 60%;
+    color: white;
+    display: none;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: center;
+    min-height: 10%;
+}
+
+.navButtons button {
+    background: none;
+    outline: none;
+    text-decoration: none;
+    border: 1px solid rgba(184, 173, 173, 0.6);
+    color: white;
+    width: 50%;
+    font-family: Poppins Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#active {
+    display: block;
+}
+
+.closebtn {
+    justify-self: flex-end;
+    margin: 2% 3% 2% 2%;
+    background: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    color: rgba(234, 235, 241, 0.7);
+    font-weight: bolder;
+    font-size: larger;
+    padding: 2%;
+}
+
+@media(max-width:760px) {
+    .content {
+        min-height: 70%;
+    }
+
+    .closebtn {
+        padding: 0% 3% !important;
+    }
+}

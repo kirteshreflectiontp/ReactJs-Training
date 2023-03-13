@@ -1,0 +1,105 @@
+.navContainer {
+    align-self: center;
+    justify-self: center !important;
+    background: rgba(1, 2, 12, 0.7);
+    border: 1px solid rgba(184, 173, 173, 0.6);
+    width: 50vw;
+    height: 70vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    display: none;
+    height: auto;
+    min-height: 80%;
+    background: transparent;
+}
+
+.navButtons {
+    display: flex;
+    background: transparent;
+    width: 100%;
+    height: 10%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.hide {
+    display: none;
+}
+
+.navButtons button {
+    background: none;
+    color: white;
+    width: 20%;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 70%;
+    padding: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: Poppins, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 5px 5px 18px 0px rgba(4, 27, 235, 0.3);
+    transition: box-shadow 150ms linear, background-color 150ms linear, transform 150ms linear;
+}
+
+.navButtons button:hover {
+    transform: scale(.98);
+    transition: 0.3s linear;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 6px 8px 8px 0px rgba(0, 0, 0, 0.30);
+}
+
+.navButtons button:active {
+    transform: scale(0.97);
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.30);
+}
+
+#active {
+    display: block;
+}
+
+/* scrollbar  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(119, 130, 165, 0.3);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(133, 128, 128);
+}
+
+@media(max-width:760px) {
+    .navContainer {
+        width: 80%;
+    }
+
+    .navButtons button {
+        font-size: 50%;
+        width: 27%;
+        height: 65%;
+    }
+}

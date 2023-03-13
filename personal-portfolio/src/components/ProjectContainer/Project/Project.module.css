@@ -1,0 +1,55 @@
+.dataWrapper {
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    overflow: auto;
+}
+
+.dataWrapper h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 80;
+    letter-spacing: 2px;
+    margin: 5%;
+}
+
+.dataWrapper h3 {
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 50;
+    margin: 0 5% 5%;
+}
+
+.linkBtns {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    margin-top: 1%;
+}
+
+.dataWrapper a {
+    text-decoration: none;
+    color: rgb(134, 179, 218);
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+
+    font-size: large;
+}
+
+.dataWrapper a:visited,
+a:hover {
+    color: rgb(85, 139, 185);
+    outline: none;
+}
+
+@media(max-width:760px) {
+    .dataWrapper a {
+        font-size: small;
+        padding: 7px 10px;
+
+    }
+}

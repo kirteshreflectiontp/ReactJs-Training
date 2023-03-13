@@ -1,0 +1,40 @@
+{
+    "projects": [{
+            "title": "Couple-Chat",
+            "Description": "It is a real time one by one Video chat application. One can call someone by copying their name & generating ID and one can recive call by just drubbing that ID, Hustle-free chat.",
+            "tech": ["ReactJs","Web-RTC", "socket.io", "Heroku"],
+            "links": {
+                "visit": "https://avdheshvideoapp.netlify.app/",
+                "code": "https://github.com/SidheshBokade/VideoChatApp"
+                
+            }
+        },
+        {
+            "title": "Go-Corona-Go",
+            "Description": "This app provides real time stats of covid-19 (global, countrywise) , displays the total deaths,recovered,infected.",
+            "tech": ["Javasript", "ReactJs", "ChartJs","Material UI"],
+            "links": {
+                "visit": "https://vibrant-shannon-91178c.netlify.app/",
+                "code": "https://github.com/SidheshBokade/Go-Corona-Go"
+            }
+        },
+        {
+            "title": "Algo-flow",
+            "Description": "Contains all types of algorithms and there visual representation.",
+            "tech": ["  Algorithms", "ReactJs"],
+            "links": {
+                "visit": "https://algoflow.netlify.app/",
+                "code": "https://github.com/SidheshBokade/Algoflow"
+            }
+        },
+        {
+            "title": "Hotel-Midland-Management-System",
+            "Description": "There are mainly 3 types of room a person can book,Single-bed rooms,Double-bed rooms,Meeting rooms",
+            "tech": ["OOP", "C++"],
+            "links": {
+                "code": "https://github.com/SidheshBokade/Hotel-Midland-system"
+            }
+        }
+
+    ]
+}

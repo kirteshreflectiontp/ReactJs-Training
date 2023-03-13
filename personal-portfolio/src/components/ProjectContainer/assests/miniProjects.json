@@ -1,0 +1,72 @@
+{
+    "projects": [
+     {
+        "title": "Better Thoughts",
+        "Description": "Fetch the Random Quotes from AdviceSlip API, for better thoughts",
+        "tech": ["ReactJS", "Advice-Slip API", "Netlify"],
+        "links": {
+            "visit": "https://suspicious-brahmagupta-82054e.netlify.app/",
+            "code": "https://github.com/SidheshBokade/Random-quote-generator-"
+            
+        }
+    }
+        ,{
+            "title": "Analog Clock",
+            "Description": "Simple Analog Clock",
+            "tech": ["HTML","CSS","Javasript"],
+            "links": {
+                "visit": "https://inspiring-boyd-03e850.netlify.app/",
+                "code": "https://github.com/SidheshBokade/Analogclock"
+            }
+        },
+        {
+            "title": "Mausam",
+            "Description": "A weather app made with javascript.The UI of the app changes according to the weather.",
+            "tech": ["Javasript", "Reactjs", "CSS"],
+            "links": {
+                "visit": "https://mausaam.netlify.app/",
+                "code": "https://github.com/SidheshBokade/Mausam",
+                "video": "video link"
+            }
+        }
+        ,{
+            "title": "Todo-List",
+            "Description": "To keep Daily track Reactjs Todolist is here for you ",
+            "tech": ["HTML", "Javasript", "CSS"],
+            "links": {
+                "visit": "https://eager-carson-955226.netlify.app/",
+                "code": "https://github.com/SidheshBokade/TodoList"
+            }
+        },
+        {
+            "title": "Quiz-App",
+            "Description": "A single page app for Daily Quiz",
+            "tech": ["Javasript", "HTML", "CSS"],
+            "links": {
+                "visit": "https://xenodochial-mcclintock-1762b0.netlify.app/",
+                "code": "https://github.com/SidheshBokade/Quizapp"
+            }
+        },
+        {
+            "title": "Special Ocassion Counters App",
+            "Description": " ",
+            "tech": ["Javasript", "HTML", "CSS"],
+            "links": {
+                "visit": "https://keen-raman-29acbe.netlify.app/",
+                "code": "https://github.com/SidheshBokade/Counter-App"
+            }
+        },
+        {
+            "title": "Stop Watch",
+            "Description": "Simple Stop Watch.",
+            "tech": ["Javasript", "HTML", "CSS"],
+            "links": {
+                "visit": "https://github.com/SidheshBokade/StopWatch",
+                "code": "https://github.com/SidheshBokade/StopWatch",
+                "video": "video link"
+            }
+        }
+
+
+    ]
+}
