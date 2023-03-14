@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Index.css'
 class Index extends Component {
     constructor(props) {
