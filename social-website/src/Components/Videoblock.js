@@ -12,8 +12,8 @@ const {videoData} = useContext(VideoContext);
       key : 'My-Videos',
       title : 'My-Videos',
       content: [(<div className='video_block'>
+       
         {videoData?.map((video, index) => (
-          
       <div  key={index}>
         <h3>{video.title}</h3>
         <iframe title='vidio' className='vid' src = {video.url} />
@@ -24,8 +24,8 @@ const {videoData} = useContext(VideoContext);
       )]
     },
     {
-        key : 'Shared-Videos',
-        title : 'Shared-Videos',
+        key : 'Default-Videos',
+        title : 'Default-Videos',
         content: [(<div className='video_block'>
         <span ><video src={Video2} className='vid'  controls></video></span>
         <span ><video src={Video2} className='vid'  controls></video></span>
@@ -34,20 +34,25 @@ const {videoData} = useContext(VideoContext);
         )]
       },
       {
-        key : 'Deleted-Videos',
-        title : 'Deleted-Videos',
-        content:'No Video Deleted'
-      },
-      {
-        key : 'Watched-Videos',
-        title : 'Watched-Videos',
-        content:[(<div className='video_block'>
-        <span ><video src={Video1} className='vid'  controls></video></span>
-        <span ><video src={Video2} className='vid'  controls></video></span>
-        <span ><video src={Video1} className='vid'  controls></video></span>
-    </div>
-        )]
-      }
+          key : 'Watched-Videos',
+          title : 'Watched-Videos',
+          content: [(<div className='video_block'>
+          <span ><video src={Video2} className='vid'  controls></video></span>
+          <span ><video src={Video2} className='vid'  controls></video></span>
+          <span ><video src={Video2} className='vid'  controls></video></span>
+      </div>
+          )]
+        },
+        {
+            key : 'Deleted-Videos',
+            title : 'Deleted-Videos',
+            content: [(<div className='video_block'>
+            <span ><video src={Video2} className='vid'  controls></video></span>
+            <span ><video src={Video2} className='vid'  controls></video></span>
+            <span ><video src={Video2} className='vid'  controls></video></span>
+        </div>
+            )]
+          }
 ]
   return (
     <div>

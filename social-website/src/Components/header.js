@@ -4,6 +4,9 @@ import React, { useContext, useState } from 'react'
 import Nav from './navlinks/nav';
 import UserContext from './UserContext'
 import VideoContext from './VideoContext';
+import {GiHamburgerMenu} from 'react-icons/gi'
+import {RiVideoAddFill} from 'react-icons/ri'
+import {BiArrowFromLeft} from 'react-icons/bi'
 const Header = () => {
     const [dp, setDp] = useState(false);
     const [dialog, setDialog] = useState(false);
@@ -55,11 +58,11 @@ const Header = () => {
     </div>
    
     <div className='header_clicks'>
-        <div><button className='header_button' onClick={() => showVideoPopUp(true)}><i class="fa-solid fa-video-plus"></i>UPLOAD VIDEO</button></div>
+        <div><button className='header_button' onClick={() => showVideoPopUp(true)}>UPLOAD VIDEO<RiVideoAddFill className='ri-icon'/></button></div>
         <div><button className='dots_button' onClick={(e) => {
           e.preventDefault();
           setDp(!dp);
-        }}><span><i class="fa-solid fa-ellipsis-vertical "></i></span></button></div>
+        }}><span>{dp?<BiArrowFromLeft className='gi-icon'/>:<GiHamburgerMenu className='gi-icon'/>}</span></button></div>
        {dp && <div><Nav/></div>}
     </div>
     {dialog &&

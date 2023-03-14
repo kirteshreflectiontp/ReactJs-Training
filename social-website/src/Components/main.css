@@ -29,18 +29,37 @@
 }
 .banner-list{
   position: fixed;
-  top: 40%;
-  left: 40%;
+  top: 35%;
+  left: 45%;
   background-color: #fff;
   padding: 20px;
   border: 1px solid #ccc;
-  z-index: 3
+  z-index: 3;
+text-align: center;
+}
+.banner-list button{
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #dc2430, #7b4397 60%  );
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.e-icon{
+  position: absolute;
+  top: 10px;
+  font-size: 22px;
+
 }
 .banner_edit_button{
   position: absolute;
   top: 110px;
-  left: 60px;
-  background-color: dimgray;
+  right: 60px;
+  color: #fff;
+  font-size: 24px;
 }
 .profile_name{
     margin-left: 275px;
@@ -55,7 +74,7 @@
     font-size:15px;
     background-image: linear-gradient(to right, #dc2430, #7b4397 40%  );
     margin: 10px 0px;
-    padding: 15px 20px;
+    padding: 15px 30px 15px 15px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -65,6 +84,7 @@
     border-radius: 5px;
     width: 100%;
     border: none;
+    position: relative;
   }
  
   .nav_bar{
@@ -96,12 +116,15 @@ height: 250px;
 
   }
   .video_block{
-    width: 1440px;
-    margin: 0px auto;
+    width: 100%;
     margin-top: 20px;
  font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+ display: flex;
     justify-content: space-around;
+  }
+  .video_block div{
+    margin: 0px 10px;
+    display: inline-block;
   }
   .banner-img{
     height: 250px;
@@ -121,4 +144,19 @@ height: 250px;
   .banner-block{
     margin: 0px auto;
     width: 1440px;
+  }
+  .show-container{
+    margin: 150px auto;
+    padding: 30px;
+    background-image: linear-gradient(to right, #dc2430, #7b4397 40%  );
+    width: 500px;
+  }
+  .data_user{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border:1px solid black
   }

@@ -5,7 +5,7 @@ import Videoblock from './Videoblock';
 import Profileimg from './images/profileimg.jpg'
 import { useNavigate } from 'react-router-dom';
 import UserContext from './UserContext';
-
+import{AiFillEdit} from 'react-icons/ai';
 
 
 const Main = () => {
@@ -40,7 +40,7 @@ const Main = () => {
            <div  className='town'>{loggedInUser?.address}</div> 
         </div>
         <div>
-         <button className='profile_button' onClick={editProfile}><i class="fa-duotone fa-pen-line">Edit Profile</i></button>
+         <button className='profile_button' onClick={editProfile}>Edit Profile<AiFillEdit className='e-icon'/></button>
          
         </div>
         </div>

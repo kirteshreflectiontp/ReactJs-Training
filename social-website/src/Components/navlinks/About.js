@@ -8,17 +8,13 @@ const About = (props) => {
     const {loggedInUser} =  useContext(UserContext);
    
     return (
-        <div>
+        <div >
             <Header/>
-           
-            <br/>
-            <br/>
-            <div  className='data_user'>Name:{loggedInUser?.fullname}  </div>
-            <br/>
-            <div  className='data_user'> Address:{loggedInUser?.address}</div>
-            <br/>
-            <div  className='data_user'>UserName:{loggedInUser?.username}</div>
-            
+            <div className='show-container'>
+            <div  className='data_user'><div>Name:</div><div>{loggedInUser?.fullname} </div> </div>
+            <div  className='data_user'> <div>Address:</div><div>{loggedInUser?.address}</div></div>
+            <div  className='data_user'><div>UserName:</div><div>{loggedInUser?.username}</div></div>
+            </div>
         </div>
     );
 };

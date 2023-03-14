@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {FaEdit} from 'react-icons/fa'
 const Banner = () => {
     const [edit, setEdit] = useState(false);
     const bannerList = ['ban0.jpg', 'ban1.jpg', 'ban2.jpg', 'ban3.jpg','ban4.jpg'];
@@ -15,7 +15,7 @@ const Banner = () => {
             <div>
                 <div className='banner-block'>
                     <img className='banner-img' src={`./Images/${selectedBanner}`} alt='banner' />
-                    <button className='banner_edit_button' onClick={() => setEdit(true)}> Edit</button>
+                    <span className='banner_edit_button'> <FaEdit  onClick={() => setEdit(true)}/></span>
                 </div>
                 {edit &&
                     <div>

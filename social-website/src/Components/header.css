@@ -6,11 +6,20 @@
     margin: 0px auto;
     padding-bottom: 25px;
 }
+.ri-icon{
+  font-size: 22px;
+  position: absolute;
+  top: 11px;
+  padding-left: 4px;
+}
+.gi-icon{
+  font-size: 22px;
+}
 .header_button{
     font-size:15px;
     background-image: linear-gradient(to right, #dc2430, #7b4397 40%  );
     margin: 10px 0px;
-    padding: 15px 20px;
+    padding: 15px 32px 15px 15px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -20,10 +29,11 @@
     border-radius: 5px;
     width: 100%;
     border: none;
+    position: relative;
   }
   .dots_button{
     margin: 10px 0px;
-    padding: 14px 20px;
+    padding: 8px 12px;
     border-radius: 5px;
     border: 2px solid transparent;
     background: linear-gradient(white 0 0) padding-box, linear-gradient(to right, #fb3570, #9c20aa) border-box;
@@ -32,13 +42,12 @@
     position: absolute;
     top: 65px;
     left: 150px;
-    background-color: white;
-    width: 400px;
+    width: 4350px;
     font-size: 18px;
   }
   .header_clicks{
     display: flex;
-    width: 220px;
+    width: 240px;
     justify-content: space-between;
   }
   .search_input{
@@ -61,13 +70,28 @@
     font-size: larger;
 
   }
+  .Nav-Li{
+    list-style: none;
+    color: #000;
+    font-size: 18px;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+border-radius: 15px;
+  }
+  .Nav-Li:hover{
+color: #fff;
+background-color: #000;
+  }
   .nav_list{
 position: absolute;
-right: 40px;
-top: 20px;
-background-color:lightblue;
-padding: 20px 20px;
-border-radius: 10px;
+right: 120px;
+top: -10px;
+background-color:#fff;
+display: flex;
+flex-direction: row;
+padding: 15px 20px;
   }
   .choose_upload{
     text-align: left;

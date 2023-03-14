@@ -19,12 +19,11 @@ const Contact = (props) => {
            
            <Header/> 
           
-           <br/>
-           <br/>
-           <div className='data_user'>Email:{userData?.email} </div>
-           <br/>
-           <div  className='data_user'>Mobile:{userData?.mobilenumber} </div>
-
+          <div className="show-container">
+           <div className='data_user'><div>Email:</div><div>{userData?.email}</div> </div>
+           
+           <div  className='data_user'><div>Mobile:</div><div>{userData?.mobilenumber} </div></div>
+           </div>
         </div>
     );
 };
