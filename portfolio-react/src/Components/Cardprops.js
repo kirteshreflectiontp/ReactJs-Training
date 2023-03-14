@@ -1,6 +1,5 @@
 import "./Projectcard.css";
 import React from 'react'
-import { NavLink } from "react-router-dom";
 const Cardprops = (props) => {
   return (
     <div className="p-card">
@@ -9,8 +8,8 @@ const Cardprops = (props) => {
     <div className="project-details">
         <p>{props.text}</p>
         <div className="p-btn">
-    <NavLink to ="https://www.youtube.com/watch?v=0h2b4ftbZcU&t=7776s" className="btn">View</NavLink>
-    <NavLink to ={props.source} className="btn">Source</NavLink>
+    <a href={props.view} className="btn">View</a>
+    <a href ={props.source} className="btn">Source</a>
         </div>
     </div>
            </div>
