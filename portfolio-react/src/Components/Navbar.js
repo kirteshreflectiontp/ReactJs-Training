@@ -1,7 +1,8 @@
 import './Navbar.css'
 import React, { useState } from 'react'
 import{Link} from 'react-router-dom'
-import{FaBars,FaTimes} from "react-icons/fa";
+import{FaBars,FaTimes,FaDownload} from "react-icons/fa";
+import myPDF from './Kirtesh.pdf'
 const Navbar = () => {
  const [click,setClick]= useState(false);
  const MobileClick = () => setClick(!click);
@@ -31,6 +32,9 @@ window.addEventListener("scroll",ChangeColor);
             </li>
             <li>
                 <Link to="/contactus">Contact Me</Link>
+            </li>
+            <li >
+            <a className='btn btn-light'  href={myPDF} download="Kirtesh.pdf">Resume<FaDownload/></a>
             </li>
         </ul>
         <div className='mobile-nav' onClick={MobileClick}>
