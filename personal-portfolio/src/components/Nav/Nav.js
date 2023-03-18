@@ -6,7 +6,7 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Fade from 'react-reveal/Fade';
 import ProjectContainer from '../ProjectContainer/ProjectContainer';
-
+import myPDF from './Kirtesh.pdf'
 function Nav() {
     const [activeTab, setActiveTab] = useState('0');
     const [hideNav, setHideNav] = useState(false)
@@ -55,7 +55,7 @@ function Nav() {
                     <button onClick={() => { toggle('1'); }}>About</button>
                     <button onClick={() => { toggle('2'); }}>Projects</button>
                     <button onClick={() => { toggle('3'); }}>Contact</button>
-
+                    <button><a href={myPDF} download="Kirtesh.pdf">Resume</a><i className="fa fa-download "></i></button>
                 </div>
 
 
